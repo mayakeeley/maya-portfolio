@@ -1,0 +1,23 @@
+@import "src/styles/styles";
+
+.intro {
+  display: flex;
+  justify-content: center;
+  &__img {
+    @include fluid-property("height", 100px, 150px);
+    border-radius: 50%;
+    margin-right: 2.5em;
+  }
+  &__info {
+    padding: 0.625em;
+    white-space: nowrap;
+    &__title {
+      font-size: 1.8em;
+    }
+    &__text {
+      font-weight: 300;
+      padding: 0.3125em 0;
+      margin: 0;
+    }
+  }
+}

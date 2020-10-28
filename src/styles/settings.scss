@@ -1,0 +1,31 @@
+$pathName: "shared/styles/";
+$collapse-padding-large: 30px;
+$collapse-padding-small: 15px;
+$vertical-padding-margin-based-off-vh: false;
+/*  ---------------------------------------------------
+    Breakpoints
+------------------------------------------------------- */
+
+$mobile: 450px !default;
+$tablet: 768px !default;
+$tablet-landscape: 1024px !default;
+$desktop: 1366px !default;
+$desktop-large: 1560px !default;
+
+/*  ---------------------------------------------------
+    Fluid properties
+------------------------------------------------------- */
+
+$default-fluid-property-clip-low: $mobile !default;
+$default-fluid-property-clip-high: $desktop !default;
+$default-fluid-property-clip-low-vertical: 600px !default;
+$default-fluid-property-clip-high-vertical: 1200px !default;
+
+/*  ---------------------------------------------------
+    Typography
+------------------------------------------------------- */
+
+// This must be a rem unit
+$font-size: 1rem;
+$base-font-colour: black;
+$output-fonts-px: false !default;

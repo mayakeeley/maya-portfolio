@@ -1,0 +1,45 @@
+.header {
+  border-bottom: 0.5px solid lightgray;
+  background-color: white;
+  display: block;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  &__container {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 52.5em;
+    padding: 1.625em 1.25em;
+  }
+
+  &__title {
+    font-weight: 700;
+    color: rgb(38, 38, 38);
+    margin: 0;
+
+    &--light {
+      font-weight: 400;
+      padding: 0 0.3125em;
+      background-color: white;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+
+    &__link {
+      color: black;
+      font-size: 1.2em;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}

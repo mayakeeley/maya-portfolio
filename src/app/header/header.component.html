@@ -1,0 +1,16 @@
+<header class="header">
+  <div class="header__container">
+    <h2 class="header__title">MK <span class="header__title--light">|</span> Portfolio</h2>
+    <nav class="header__links">
+      <a
+        class="header__links__link"
+        *ngFor="let link of links"
+        [href]="link.link"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <fa-icon class="header__links__icon" [icon]="link.icon"></fa-icon>
+      </a>
+    </nav>
+  </div>
+</header>
