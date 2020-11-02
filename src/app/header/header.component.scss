@@ -1,16 +1,22 @@
-.header {
-  border-bottom: 0.5px solid lightgray;
-  background-color: white;
+:host {
   display: block;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  width: 100%;
   z-index: 1;
+}
+
+.header {
+  border-bottom: 0.5px solid lightgray;
+  background-color: white;
+  width: 100%;
+  top: 0;
+  position: relative;
   &__container {
     margin: auto;
     display: flex;
     justify-content: space-between;
+    background-color: inherit;
     align-items: center;
     max-width: 52.5em;
     padding: 1.625em 1.25em;
@@ -18,6 +24,7 @@
 
   &__title {
     font-weight: 700;
+    background-color: inherit;
     color: rgb(38, 38, 38);
     margin: 0;
 
@@ -31,6 +38,7 @@
   &__links {
     display: flex;
     justify-content: space-between;
+    background-color: inherit;
     width: 20%;
 
     &__link {

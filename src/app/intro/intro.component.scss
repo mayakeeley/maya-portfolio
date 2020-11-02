@@ -3,6 +3,7 @@
 .intro {
   display: flex;
   justify-content: center;
+  margin-bottom: 3.75em;
   &__img {
     @include fluid-property("height", 100px, 150px);
     border-radius: 50%;

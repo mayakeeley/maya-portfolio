@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 * {
   font-family: "Yanone Kaffeesatz", sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  box-sizing: border-box;
 }
