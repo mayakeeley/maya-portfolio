@@ -13,5 +13,22 @@
   </head>
   <body>
     <app-root></app-root>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyCBXShcJBVdcy-t9HpgPYC25ytl2Jdad-8",
+        authDomain: "portfolio-f51b6.firebaseapp.com",
+        databaseURL: "https://portfolio-f51b6.firebaseio.com",
+        projectId: "portfolio-f51b6",
+        storageBucket: "portfolio-f51b6.appspot.com",
+        messagingSenderId: "908942764523",
+        appId: "1:908942764523:web:1754397baaff6ec85f51ae",
+        measurementId: "G-TQ4ZCSRSMK",
+      };
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </body>
 </html>
