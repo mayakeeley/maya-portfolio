@@ -19,9 +19,9 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 
 export const ROUTES: Routes = [
-  { path: '', redirectTo: 'work-exp', pathMatch: 'full' },
+  { path: '', redirectTo: 'work', pathMatch: 'full' },
   {
-    path: 'work-exp',
+    path: 'work',
     component: WorkExpComponent,
   },
   {
@@ -32,7 +32,7 @@ export const ROUTES: Routes = [
     path: 'interests',
     component: InterestsComponent,
   },
-  { path: 'profile', component: ProfileComponent },
+  { path: 'education', component: ProfileComponent },
 ];
 
 @NgModule({

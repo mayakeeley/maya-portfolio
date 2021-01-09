@@ -1,6 +1,12 @@
 <nav class="nav">
   <div class="nav__options">
-    <a [routerLink]="link.link" class="nav__options__link" *ngFor="let link of links">
+    <a
+      [routerLink]="link.link"
+      class="nav__options__link"
+      *ngFor="let link of links"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
       <div class="nav__options__option">
         <fa-icon class="nav__options__icon" [icon]="link.icon"></fa-icon>
         {{ link.title }}

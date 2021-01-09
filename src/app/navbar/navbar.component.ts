@@ -11,8 +11,8 @@ import {NavLinksModel} from '../../models/nav-links.model';
 export class NavbarComponent implements OnInit {
   public links: NavLinksModel[] = [
     {
-      link: '/work-exp',
-      title: 'WORK EXP',
+      link: '/work',
+      title: 'WORK',
       icon: faBriefcase,
     },
     {
@@ -21,8 +21,8 @@ export class NavbarComponent implements OnInit {
       icon: faCode,
     },
     {
-      link: '/profile',
-      title: 'PROFILE',
+      link: '/education',
+      title: 'EDUCATION',
       icon: faUser,
     },
     {

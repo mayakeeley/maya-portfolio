@@ -30,6 +30,12 @@
   }
 }
 
+.active {
+  .nav__options__option {
+    color: black;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .nav__options__link {
     padding: 0 30px;
