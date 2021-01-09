@@ -1,0 +1,10 @@
+<div class="projects">
+  <img
+    *ngFor="let project of projects"
+    class="projects__tile"
+    [src]="'../../../../assets/images/' + project.image"
+    [alt]="project.projectName"
+    (click)="openDialog(project)"
+  />
+
+</div>
