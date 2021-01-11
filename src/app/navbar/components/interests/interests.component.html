@@ -1,7 +1,9 @@
-<div class="interests" *ngFor="let interest of interests">
-  <img [src]="interest.image" [alt]="interest.name" />
-  <div>
-    <h3>{{ interest.name }}</h3>
-    <p>{{ interest.desc }}</p>
+<div class="interests">
+  <div *ngFor="let interest of interests">
+    <img [src]="interest.image" [alt]="interest.name" />
+    <div>
+      <h3>{{ interest.name }}</h3>
+      <p>{{ interest.desc }}</p>
+    </div>
   </div>
 </div>
