@@ -1,4 +1,4 @@
-import { WorkExpModel } from '../../../../models/work-exp.model';
+import { WorkExpModel } from '../../models/work-exp.model';
 
 export const workExp: WorkExpModel[] = [
   {
@@ -16,18 +16,19 @@ export const workExp: WorkExpModel[] = [
       'Node',
     ],
     productDescription:
-      'Bot-Hive is a new online platform designed to make the process of getting started with Robotics & Automation technology, faster and more conveniently.',
+      'Bot-Hive is a new online platform designed to make the process of getting started with Robotics & Automation technology faster and more convenient.',
     responsibilities: [
-      'While in this role I have learned many new technologies, in particular Angular. I worked directly with the CTO to build the first version of the product. I took a lead role in the product development strategy as well as working with the CEO to translate this strategy into user stories.',
-      'Additionally, I took on the sole responsibility of delivering the front-end of the Robot Matchmaker tool. This tool allowed the content team to create a question tree that would then be translated into the front-end where a user would be able to find a suitable robot for the task they wanted to automate.',
-      'I worked my way up from junior to mid-level while at this company within 9 months and have managed a junior developer for 6 months. This involves managing his workload, supporting his learning, reviewing pull requests and holding regular performance reviews.',
+      'Helped build the first version of a website for an early-stage robotics marketplace start-up',
+      'Responsible for the delivery of the Robot Matchmaker tool where users find robot solutions based on conditional questions',
+      'Help lead product development strategy',
+      'Manage a junior developer; manage workload, support learning, review pull requests and conduct regular performance reviews',
     ],
     images: [
       {
-        src: '../../../../assets/images/bot-hive-projects.png',
+        src: '../../../../assets/images/product-gallery.png',
         alt: 'projects',
       },
-      { src: '../../../../assets/images/bot-hive-rm.png', alt: 'matchmaker' },
+      { src: '../../../../assets/images/matchmaker.png', alt: 'matchmaker' },
     ],
   },
   {

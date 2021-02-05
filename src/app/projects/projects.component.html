@@ -1,0 +1,20 @@
+<div class="project" *ngFor="let project of projects">
+  <div class="project__images">
+    <img
+      class="project__images__image"
+      [src]="'assets/images/' + project.image"
+      [alt]="project.projectName"
+    />
+  </div>
+  <div class="project__content">
+    <h2>{{ project.projectName }}</h2>
+    <h3>Website</h3>
+    <a [href]="'//' + project.url" target="_blank">{{ project.url }}</a>
+    <h3>Tech Stack</h3>
+    <p *ngFor="let tech of project.techStack">{{ tech }}</p>
+    <h3>Product</h3>
+    <p *ngFor="let desc of project.desc">
+      {{ desc }}
+    </p>
+  </div>
+</div>

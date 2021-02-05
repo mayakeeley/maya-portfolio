@@ -1,3 +1,5 @@
+@import "src/styles/styles";
+
 :host {
   display: block;
   position: sticky;
@@ -12,14 +14,16 @@
   width: 100%;
   top: 0;
   position: relative;
+  @include fluid-property("padding-left", 16px, 64px);
+  @include fluid-property("padding-right", 16px, 64px);
+
   &__container {
     margin: auto;
     display: flex;
     justify-content: space-between;
     background-color: inherit;
     align-items: center;
-    max-width: 52.5em;
-    padding: 1.625em 1.25em;
+    padding: 1.625em 0;
   }
 
   &__title {
@@ -39,11 +43,12 @@
     display: flex;
     justify-content: space-between;
     background-color: inherit;
-    width: 20%;
 
     &__link {
       color: black;
+      text-decoration: none;
       font-size: 1.2em;
+      margin-left: 2em;
 
       &:hover {
         opacity: 0.5;

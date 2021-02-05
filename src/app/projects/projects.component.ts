@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import projects from './static.config';
-import { ProjectModel } from '../../../../models/project.model';
+import { ProjectModel } from '../../models/project.model';
 import { MatDialog } from '@angular/material/dialog';
 import { ProjectComponent } from '../project/project.component';
 

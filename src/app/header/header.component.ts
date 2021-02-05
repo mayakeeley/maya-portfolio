@@ -1,17 +1,27 @@
 import { Component, OnInit } from '@angular/core';
-import {links} from './static.config';
-import {HeaderLinksModel} from '../../models/header-links.model';
+import { NavLinksModel } from '../../models/nav-links.model';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  public links: HeaderLinksModel[] = links;
-  constructor() { }
+  public links: NavLinksModel[] = [
+    {
+      link: '#work',
+      title: 'WORK',
+    },
+    {
+      link: '#projects',
+      title: 'PROJECTS',
+    },
+    {
+      link: '#education',
+      title: 'EDUCATION',
+    },
+  ];
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

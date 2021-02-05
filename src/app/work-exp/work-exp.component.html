@@ -1,0 +1,31 @@
+<div class="work__container" id="work">
+  <h2 class="work__title">Work Experience</h2>
+  <div class="work" *ngFor="let work of workExp">
+    <div class="work__images">
+      <img
+        *ngFor="let image of work.images"
+        class="work__images__image"
+        [src]="image.src"
+        [alt]="image.alt"
+      />
+    </div>
+    <div class="work__content">
+      <h2>
+        {{ work.companyName + " " + work.startDate + " - " + work.endDate }}
+      </h2>
+      <p>{{ work.jobTitle }}</p>
+      <h3>Website</h3>
+      <a [href]="'//' + work.website" target="_blank">{{ work.website }}</a>
+      <h3>Tech Stack</h3>
+      <p *ngFor="let tech of work.techStack">{{ tech }}</p>
+      <h3>Product</h3>
+      <p>
+        {{ work.productDescription }}
+      </p>
+      <h3>Responsibilities</h3>
+      <p *ngFor="let responsibility of work.responsibilities">
+        {{ responsibility }}
+      </p>
+    </div>
+  </div>
+</div>

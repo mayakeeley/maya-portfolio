@@ -1,7 +1,7 @@
 export interface ProjectModel {
-  projectName: string;
+  title: string;
   image: string;
   url: string;
   techStack: string[];
-  desc: string;
+  desc: string[];
 }
