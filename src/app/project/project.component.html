@@ -1,9 +1,0 @@
-<div>
-  <img [src]="'../../../../assets/images/' + data.image" [alt]="data.url" />
-  <div>
-    <mat-icon class="dialog__icon" mat-dialog-close="true">close</mat-icon>
-    <h3>{{ data.projectName }}</h3>
-    <p>{{ data.desc }}</p>
-    <p *ngFor="let tech of data.techStack">{{ tech }}</p>
-  </div>
-</div>

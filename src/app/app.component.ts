@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import {data} from './static.config';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+  public sections = data;
   title = `Maya's portfolio`;
 
   public constructor(private titleService: Title) {}

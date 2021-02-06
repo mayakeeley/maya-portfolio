@@ -1,13 +1,15 @@
 <header class="header">
   <div class="header__container">
-    <h2 class="header__title">
-      MK <span class="header__title--light">|</span> Portfolio
-    </h2>
+    <a class="header__title__wrapper header__link" (click)="scrollTo('home')">
+      <h2 class="header__title">
+        MK <span class="header__title--light">|</span> Portfolio
+      </h2>
+    </a>
     <nav class="header__links">
       <a
-        class="header__links__link"
+        class="header__links__link header__link"
         *ngFor="let link of links"
-        [href]="link.link"
+        (click)="scrollTo(link.link)"
         rel="noopener noreferrer"
       >
         {{ link.title }}

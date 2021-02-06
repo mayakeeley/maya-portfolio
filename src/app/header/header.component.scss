@@ -9,8 +9,9 @@
 }
 
 .header {
-  border-bottom: 0.5px solid lightgray;
-  background-color: white;
+  height: 5.5em;
+  background-color: $dark;
+  box-shadow: 0.1em 0.25em 0.25em rgba($dark, 0.15);
   width: 100%;
   top: 0;
   position: relative;
@@ -28,15 +29,25 @@
 
   &__title {
     font-weight: 700;
-    background-color: inherit;
-    color: rgb(38, 38, 38);
+    background-color: $dark;
+    color: white;
     margin: 0;
+    @include fluid-property("font-size", 16px, 24px);
+
+    &__wrapper {
+      text-decoration: none;
+    }
 
     &--light {
       font-weight: 400;
       padding: 0 0.3125em;
-      background-color: white;
+      background-color: $dark;
+      color: $light;
     }
+  }
+
+  &__link {
+    cursor: pointer;
   }
 
   &__links {
@@ -45,13 +56,16 @@
     background-color: inherit;
 
     &__link {
-      color: black;
+      color: $light;
+      background-color: $dark;
       text-decoration: none;
       font-size: 1.2em;
-      margin-left: 2em;
+      @include fluid-property("margin-left", 8px, 32px);
+      @include fluid-property("font-size", 14px, 20px);
+
 
       &:hover {
-        opacity: 0.5;
+        color: $mid;
       }
     }
   }

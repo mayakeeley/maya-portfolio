@@ -8,7 +8,7 @@
     <h1 class="intro__info__title intro__info__text">Maya Keeley</h1>
     <p class="intro__info__text">Mid-level Full Stack Developer</p>
     <div class="intro__links">
-      <a class="intro__links__link" *ngFor="let link of links" [href]="link">
+      <a class="intro__links__link" target="_blank" *ngFor="let link of links" [href]="link.link">
         <fa-icon [icon]="link.icon"></fa-icon>
       </a>
     </div>

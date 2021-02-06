@@ -1,6 +1,9 @@
 <app-header></app-header>
 <main class="content">
-  <app-intro></app-intro>
-  <app-work-exp></app-work-exp>
-  <app-projects></app-projects>
+  <app-intro id="home"></app-intro>
+  <app-section
+    *ngFor="let section of sections"
+    [data]="section"
+    [id]="section.id"
+  ></app-section>
 </main>

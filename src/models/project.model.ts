@@ -1,7 +1,11 @@
 export interface ProjectModel {
-  title: string;
-  image: string;
-  url: string;
+  name: string;
+  startDate?: string;
+  endDate?: string;
+  jobTitle?: string;
+  websiteUrl?: string;
+  githubUrl?: string;
+  bio: string;
+  image: { src: string; alt: string };
   techStack: string[];
-  desc: string[];
 }

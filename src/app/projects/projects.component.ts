@@ -1,8 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import projects from './static.config';
+import {Component, Input, OnInit} from '@angular/core';
 import { ProjectModel } from '../../models/project.model';
 import { MatDialog } from '@angular/material/dialog';
-import { ProjectComponent } from '../project/project.component';
 
 @Component({
   selector: 'app-projects',
@@ -10,12 +8,8 @@ import { ProjectComponent } from '../project/project.component';
   styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent implements OnInit {
-  public projects: ProjectModel[] = projects;
+  @Input() public projects: ProjectModel[];
   constructor(public dialog: MatDialog) {}
 
   public ngOnInit(): void {}
-
-  public openDialog(project): void {
-    const dialogRef = this.dialog.open(ProjectComponent, { data: project });
-  }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavLinksModel } from '../../models/nav-links.model';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -9,19 +10,24 @@ import { NavLinksModel } from '../../models/nav-links.model';
 export class HeaderComponent implements OnInit {
   public links: NavLinksModel[] = [
     {
-      link: '#work',
+      link: 'work',
       title: 'WORK',
     },
     {
-      link: '#projects',
+      link: 'projects',
       title: 'PROJECTS',
     },
     {
-      link: '#education',
+      link: 'education',
       title: 'EDUCATION',
     },
   ];
-  constructor() {}
+  constructor(private viewportScroller: ViewportScroller) {}
 
   ngOnInit(): void {}
+
+  public scrollTo(id): void {
+    this.viewportScroller.setOffset([0, 88]);
+    this.viewportScroller.scrollToAnchor(id);
+  }
 }

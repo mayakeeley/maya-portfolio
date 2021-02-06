@@ -3,7 +3,10 @@
 .intro {
   display: flex;
   justify-content: center;
-  padding: 7.5em 0;
+  @include fluid-property("padding-top", 56px, 128px);
+  @include fluid-property("padding-bottom", 56px, 128px);
+
+
   &__img {
     @include fluid-property("height", 100px, 150px);
     border-radius: 50%;
@@ -23,11 +26,9 @@
   }
 
   &__links {
-    background-color: inherit;
     margin-top: 1em;
 
     &__link {
-      color: black;
       font-size: 1.2em;
       padding-right: 1em;
     }

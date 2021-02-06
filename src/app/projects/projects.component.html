@@ -1,20 +1,47 @@
-<div class="project" *ngFor="let project of projects">
-  <div class="project__images">
-    <img
-      class="project__images__image"
-      [src]="'assets/images/' + project.image"
-      [alt]="project.projectName"
-    />
-  </div>
+<div
+  class="project"
+  *ngFor="let project of projects; let i = index"
+  [ngStyle]="{ 'flex-direction': i % 2 === 0 ? 'row' : 'row-reverse' }"
+>
+  <img
+    class="project__image"
+    [src]="project.image.src"
+    [alt]="project.image.alt"
+  />
+
   <div class="project__content">
-    <h2>{{ project.projectName }}</h2>
-    <h3>Website</h3>
-    <a [href]="'//' + project.url" target="_blank">{{ project.url }}</a>
-    <h3>Tech Stack</h3>
-    <p *ngFor="let tech of project.techStack">{{ tech }}</p>
-    <h3>Product</h3>
-    <p *ngFor="let desc of project.desc">
-      {{ desc }}
-    </p>
+    <div>
+      <h2 class="project__title">
+        {{ project.name }}
+      </h2>
+      <h2 class="project__italics" *ngIf="project.jobTitle">
+        {{ project.jobTitle }}
+      </h2>
+      <p *ngIf="project.startDate">
+        {{ " " + project.startDate + " - " + project.endDate }}
+      </p>
+    </div>
+    <p class="project__bio">{{ project.bio }}</p>
+    <div>
+      <h3>Tech Stack</h3>
+      <ul>
+        <li *ngFor="let tech of project.techStack">{{ tech }}</li>
+      </ul>
+    </div>
+    <div class="project__buttons">
+      <a
+        *ngIf="project.websiteUrl"
+        class="project__button project__button--primary"
+        [href]="'//' + project.websiteUrl"
+        target="_blank"
+        >View Website</a
+      >
+      <a
+        *ngIf="project.githubUrl"
+        [href]="'//' + project.githubUrl"
+        class="project__button project__button--secondary"
+        >View Code</a
+      >
+    </div>
   </div>
 </div>
