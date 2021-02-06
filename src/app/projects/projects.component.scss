@@ -4,24 +4,47 @@
   display: flex;
   font-weight: 300;
   margin: 0 0 2em 0;
-  padding: 4em 0;
+  padding: 2em 0;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    padding-top: 0;
+  }
+
+  &__reverse {
+    flex-direction: row-reverse;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   &__italics {
     font-style: italic;
+    margin-bottom: 1rem;
   }
 
   &__bio {
     font-weight: 300;
-    font-size: 1.5em;
+    @include fluid-property("font-size", 18px, 24px);
+    @include fluid-property("margin-bottom", 8px, 16px);
+  }
+
+  &__tech {
+    padding: 1em 0;
+    &__heading {
+      font-weight: 400;
+      @include fluid-property("font-size", 18px, 24px);
+
+    }
   }
 
   &__title {
-    font-size: 3.25em;
-    margin-bottom: 1rem;
+    @include fluid-property("font-size", 36px, 52px);
+    font-weight: 400;
+    @include fluid-property("margin-bottom", 8px, 16px);
+    display: flex;
+    align-items: center;
   }
 
   &__image {
@@ -29,8 +52,15 @@
     box-shadow: 0.1em 0.25em 0.25em rgba($dark, 0.15);
     min-width: 0;
     width: 100%;
-    margin: 0 2em;
     align-self: center;
+
+    &:nth-child(2n) {
+      margin-left: 2em;
+    }
+
+    &:nth-child(2n + 1) {
+      margin-right: 2em;
+    }
   }
 
   &__content {
@@ -38,10 +68,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      padding-top: 1em;
+    }
   }
 
   &__buttons {
-    margin-top: 1em;
+    margin-top: 1.5em;
     padding-bottom: 1em;
   }
 
@@ -72,6 +106,15 @@
       &:hover {
         background-color: $mid;
       }
+    }
+
+    &--small {
+      font-size: 1rem;
+      padding: 0.5em 1em;
+      background-color: $mid;
+      color: $light;
+      margin-left: 1em;
+      margin-top: 0;
     }
   }
 }

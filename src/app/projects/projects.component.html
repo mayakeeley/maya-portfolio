@@ -1,7 +1,7 @@
 <div
   class="project"
   *ngFor="let project of projects; let i = index"
-  [ngStyle]="{ 'flex-direction': i % 2 === 0 ? 'row' : 'row-reverse' }"
+  [ngClass]="i % 2 === 0 ? '' : 'project__reverse'"
 >
   <img
     class="project__image"
@@ -13,17 +13,19 @@
     <div>
       <h2 class="project__title">
         {{ project.name }}
+        <span
+          class="project__button project__button--small"
+          *ngIf="project.inProgress"
+          >In Development</span
+        >
       </h2>
       <h2 class="project__italics" *ngIf="project.jobTitle">
         {{ project.jobTitle }}
       </h2>
-      <p *ngIf="project.startDate">
-        {{ " " + project.startDate + " - " + project.endDate }}
-      </p>
+      <p class="project__bio">{{ project.bio }}</p>
     </div>
-    <p class="project__bio">{{ project.bio }}</p>
-    <div>
-      <h3>Tech Stack</h3>
+    <div class="project__tech">
+      <h3 class="project__tech__heading">Tech Stack</h3>
       <ul>
         <li *ngFor="let tech of project.techStack">{{ tech }}</li>
       </ul>

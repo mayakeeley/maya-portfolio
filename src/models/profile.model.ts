@@ -1,8 +1,6 @@
 export interface ProfileModel {
   companyName: string;
-  startDate: string;
-  endDate: string;
   jobTitle: string;
-  responsibilities: string[];
+  image: string;
   activities: string[];
 }

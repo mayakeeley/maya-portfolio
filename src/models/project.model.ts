@@ -8,4 +8,5 @@ export interface ProjectModel {
   bio: string;
   image: { src: string; alt: string };
   techStack: string[];
+  inProgress?: boolean;
 }

@@ -1,5 +1,46 @@
 @import "src/styles/styles";
 
 .profile {
+  display: flex;
   font-weight: 300;
+  margin: 0 0 2em 0;
+  padding: 2em 0;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  &__title {
+    @include fluid-property("font-size", 36px, 52px);
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  &__image {
+    flex: 1 1 50%;
+    box-shadow: 0.1em 0.25em 0.25em rgba($dark, 0.15);
+    min-width: 0;
+    width: 100%;
+    align-self: center;
+
+    &:nth-child(2n) {
+      margin-left: 2em;
+    }
+
+    &:nth-child(2n + 1) {
+      margin-right: 2em;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    @include fluid-property("font-size", 18px, 24px);
+    margin-bottom: 1em;
+  }
+
+  &__activities {
+    font-weight: 300;
+    @include fluid-property("font-size", 16px, 20px);
+  }
 }

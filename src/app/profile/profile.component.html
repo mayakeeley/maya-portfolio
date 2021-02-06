@@ -1,12 +1,12 @@
 <div class="profile" *ngFor="let item of profile">
-  <h2>
-    {{ item.companyName + " " + item.startDate + " - " + item.endDate }}
-  </h2>
-  <p>{{ item.jobTitle }}</p>
-  <h3>Activities</h3>
-  <p *ngFor="let activity of item.activities">{{ activity }}</p>
-  <h3>Summary</h3>
-  <p *ngFor="let responsibility of item.responsibilities">
-    {{ responsibility }}
-  </p>
+  <img class="profile__image" [src]="'assets/images/' + item.image" [alt]="item.companyName" />
+  <div>
+    <h2 class="profile__title">
+      {{ item.companyName }}
+    </h2>
+    <p class="profile__subtitle">{{ item.jobTitle }}</p>
+    <p class="profile__activities" *ngFor="let activity of item.activities">
+      {{ activity }}
+    </p>
+  </div>
 </div>
