@@ -32,9 +32,12 @@
 
   &__tech {
     padding: 1em 0;
+    @include fluid-property("font-size", 16px, 20px);
+
     &__heading {
       font-weight: 400;
-      @include fluid-property("font-size", 18px, 24px);
+      padding-bottom: 0.5em;
+      @include fluid-property("font-size", 20px, 32px);
 
     }
   }
@@ -56,15 +59,23 @@
 
     &:nth-child(2n) {
       margin-left: 2em;
+
+      @media screen and (max-width: 768px) {
+        margin: 0;
+      }
     }
 
     &:nth-child(2n + 1) {
       margin-right: 2em;
+
+      @media screen and (max-width: 768px) {
+        margin: 0;
+      }
     }
   }
 
   &__content {
-    flex: 1 1 66.666%;
+    flex: 1 1 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

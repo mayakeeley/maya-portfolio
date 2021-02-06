@@ -11,6 +11,10 @@
     padding: 0;
   }
 
+  &__content {
+    flex: 1 1 50%;
+  }
+
   &__title {
     @include fluid-property("font-size", 36px, 52px);
     font-weight: 400;
@@ -26,10 +30,17 @@
 
     &:nth-child(2n) {
       margin-left: 2em;
+
+      @media screen and (max-width: 768px) {
+        margin: 0;
+      }
     }
 
     &:nth-child(2n + 1) {
       margin-right: 2em;
+      @media screen and (max-width: 768px) {
+        margin: 0;
+      }
     }
   }
 

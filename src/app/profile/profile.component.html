@@ -1,6 +1,6 @@
 <div class="profile" *ngFor="let item of profile">
   <img class="profile__image" [src]="'assets/images/' + item.image" [alt]="item.companyName" />
-  <div>
+  <div class="profile__content">
     <h2 class="profile__title">
       {{ item.companyName }}
     </h2>
