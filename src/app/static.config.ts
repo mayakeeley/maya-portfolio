@@ -13,7 +13,7 @@ export const data: SectionModel[] = [
         jobTitle: 'Mid-level Developer',
         websiteUrl: 'bot-hive.com',
         techStack: [
-          'Angular 7 & 9',
+          'Angular 9 & 11',
           'NGRX',
           'AWS',
           'Dynamo DB',
@@ -62,6 +62,18 @@ export const data: SectionModel[] = [
         techStack: ['React', 'Typescript', 'Firebase', 'Material UI'],
         bio:
           'Progressive Web App which provides a community for women to exercise together',
+      },
+      {
+        name: 'Movie Recommender',
+        image: {
+          src: '../../../../assets/images/movie-recommender.png',
+          alt: 'movie recommender',
+        },
+        websiteUrl: 'https://movie-recommender.mayakeeley.com',
+        githubUrl: 'https://github.com/mayakeeley/movie-recommender',
+        techStack: ['Angular 11', 'SCSS', 'NGRX'],
+        bio:
+          "Program which suggests movies to watch based on user's favourite films",
       },
       {
         name: 'Minesweeper',
