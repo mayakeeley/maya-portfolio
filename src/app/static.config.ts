@@ -58,7 +58,7 @@ export const data: SectionModel[] = [
         name: 'Relay',
         inProgress: true,
         image: { src: '../../../../assets/images/relay.png', alt: 'relay' },
-        githubUrl: 'https://github.com/mayakeeley/relay',
+        githubUrl: 'github.com/mayakeeley/relay',
         techStack: ['React', 'Typescript', 'Firebase', 'Material UI'],
         bio:
           'Progressive Web App which provides a community for women to exercise together',
@@ -69,8 +69,8 @@ export const data: SectionModel[] = [
           src: '../../../../assets/images/movie-recommender.png',
           alt: 'movie recommender',
         },
-        websiteUrl: 'https://movie-recommender.mayakeeley.com',
-        githubUrl: 'https://github.com/mayakeeley/movie-recommender',
+        websiteUrl: 'movie-recommender.mayakeeley.com',
+        githubUrl: 'github.com/mayakeeley/movie-recommender',
         techStack: ['Angular 11', 'SCSS', 'NGRX'],
         bio:
           "Program which suggests movies to watch based on user's favourite films",
@@ -81,8 +81,8 @@ export const data: SectionModel[] = [
           src: '../../../../assets/images/minesweeper.jpg',
           alt: 'minesweeper',
         },
-        websiteUrl: 'https://minesweeper.mayakeeley.com',
-        githubUrl: 'https://github.com/mayakeeley/minesweeper',
+        websiteUrl: 'minesweeper.mayakeeley.com',
+        githubUrl: 'github.com/mayakeeley/minesweeper',
         techStack: ['HTML', 'CSS', 'Javascript'],
         bio:
           'Program which generates and visualises the minesweeper (uncovered) game field',
