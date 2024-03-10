@@ -7,9 +7,30 @@ export const data: SectionModel[] = [
     isProject: true,
     info: [
       {
+        name: 'ThinkNimble',
+        startDate: 'April 2021',
+        endDate: 'Present',
+        jobTitle: 'Lead Software Engineer',
+        websiteUrl: 'thinknimble.com',
+        techStack: [
+          'Vue',
+          'Django',
+          'Javascript',
+          'Python',
+          'Postgres',
+          'Heroku',
+        ],
+        bio:
+          'Software Development Agency working with a range of non-profit and start-up clients from seed stage to series A.',
+        image: {
+          src: '../../../../assets/images/thinknimble.png',
+          alt: 'thinknimble',
+        },
+      },
+      {
         name: 'Bot-Hive',
         startDate: 'March 2020',
-        endDate: 'Present',
+        endDate: 'April 2021',
         jobTitle: 'Mid-level Developer',
         websiteUrl: 'bot-hive.com',
         techStack: [
@@ -24,7 +45,7 @@ export const data: SectionModel[] = [
           'Online b-2-b marketplace designed to make the process of getting started with Robotics & Automation technology faster and more convenient.',
         image: {
           src: '../../../../assets/images/product-gallery.png',
-          alt: 'projects',
+          alt: 'bot-hive',
         },
       },
       {
@@ -55,13 +76,107 @@ export const data: SectionModel[] = [
     isProject: true,
     info: [
       {
-        name: 'Relay',
-        inProgress: true,
-        image: { src: '../../../../assets/images/relay.png', alt: 'relay' },
-        githubUrl: 'github.com/mayakeeley/relay',
-        techStack: ['React', 'Typescript', 'Firebase', 'Material UI'],
+        name: 'Project Basta',
+        image: {
+          src: '../../../../assets/images/projectBasta.png',
+          alt: 'Project Basta',
+        },
+        websiteUrl: 'https://www.projectbasta.com',
+        techStack: [
+          'React',
+          'Django',
+          'PostgreSQL',
+          'Heroku',
+          'Airtable',
+          'MongoDB',
+          'GSheets',
+        ],
         bio:
-          'Progressive Web App which provides a community for women to exercise together',
+          'Basta is bridging the employment gap and building careers for first generation students through award winning technology and robust employer partnerships.',
+      },
+      {
+        name: 'El Camino Travel',
+        image: {
+          src: '../../../../assets/images/elCamino.png',
+          alt: 'El Camino',
+        },
+        websiteUrl: 'https://www.elcamino.travel',
+        techStack: [
+          'Vue',
+          'Django',
+          'PostgreSQL',
+          'Heroku',
+          'Stripe',
+          'Checkfront',
+        ],
+        bio: `Get exclusive access to high-quality immersive recommendations and experiences from the world's top hospitality experts.`,
+      },
+      {
+        name: 'Keep Company',
+        image: {
+          src: '../../../../assets/images/keepCompany.png',
+          alt: 'Keep Company',
+        },
+        websiteUrl: 'https://www.keep-company.com',
+        techStack: ['Vue', 'Django', 'PostgreSQL', 'Heroku'],
+        bio: 'Keep Company is a coaching community for parents & caregivers.',
+      },
+      {
+        name: 'SchoolHouse Connection',
+        image: {
+          src: '../../../../assets/images/schoolhouseConnection.png',
+          alt: 'SchoolHouse',
+        },
+        websiteUrl: 'https://schoolhouseconnection.org/',
+        techStack: ['Vue', 'Django', 'PostgreSQL', 'Heroku'],
+        bio: `The nation's leading expert on early care and education of youth experiencing homelessness.`,
+      },
+      {
+        name: 'Network For Good',
+        image: {
+          src: '../../../../assets/images/nfg.png',
+          alt: 'NFG',
+        },
+        websiteUrl: 'https://www.nfggive.org',
+        techStack: ['React', 'Angular', 'Node', 'MongoDB', 'Jenkins'],
+        bio:
+          'Network for Good is a 501(c)(3) charity that operates a technology-enabled donor advised fund which enables donors to raise and direct funds to their favorite charities.',
+      },
+      {
+        name: 'ReWyre',
+        image: {
+          src: '../../../../assets/images/rewyre.png',
+          alt: 'ReWyre',
+        },
+        websiteUrl: 'https://www.rewyre.com',
+        techStack: [
+          'Vue',
+          'Django',
+          'PostgreSQL',
+          'Heroku',
+          'Autodesk',
+          'Stripe',
+        ],
+        bio:
+          'ReWyre is a commercial RFP and marketplace platform designed to drive new property solutions seamlessly through your portfolio.',
+      },
+      {
+        name: 'Grant Circles',
+        image: {
+          src: '../../../../assets/images/canary.png',
+          alt: 'Canary',
+        },
+        websiteUrl: 'https://thegivingtree.grantcircles.org',
+        techStack: [
+          'Vue',
+          'Django',
+          'PostgreSQL',
+          'Heroku',
+          'Stripe',
+          'Twilio',
+        ],
+        bio:
+          'The Grant Circle is a pool of funds for and funded by The Giving Tree community to support each other during financial emergencies.',
       },
       {
         name: 'Movie Recommender',
@@ -74,18 +189,6 @@ export const data: SectionModel[] = [
         techStack: ['Angular 11', 'SCSS', 'NGRX'],
         bio:
           "Program which suggests movies to watch based on user's favourite films",
-      },
-      {
-        name: 'Minesweeper',
-        image: {
-          src: '../../../../assets/images/minesweeper.jpg',
-          alt: 'minesweeper',
-        },
-        websiteUrl: 'minesweeper.mayakeeley.com',
-        githubUrl: 'github.com/mayakeeley/minesweeper',
-        techStack: ['HTML', 'CSS', 'Javascript'],
-        bio:
-          'Program which generates and visualises the minesweeper (uncovered) game field',
       },
     ],
   },
