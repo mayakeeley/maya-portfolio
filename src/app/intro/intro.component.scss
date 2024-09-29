@@ -14,7 +14,6 @@
   }
   &__info {
     padding: 0.625em;
-    white-space: nowrap;
     &__title {
       @include fluid-property("font-size", 24px, 40px);
     }
@@ -26,6 +25,10 @@
 
     &__subtitle {
       @include fluid-property("font-size", 16px, 24px);
+    }
+
+    &__content {
+      @include fluid-property("font-size", 12px, 16px);
     }
   }
 

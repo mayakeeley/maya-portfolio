@@ -2,7 +2,152 @@ import { SectionModel } from '../models/section.model';
 
 export const data: SectionModel[] = [
   {
-    title: 'Work Experience',
+    title: 'Projects',
+    id: 'projects',
+    isProject: true,
+    info: [
+      {
+        name: 'Data4Living',
+        image: {
+          src: '../../../../assets/images/data4living.png',
+          alt: 'Data4Living',
+        },
+        websiteUrl: 'app.data4living.com',
+        techStack: ['Vue', 'Django', 'PostgreSQL', 'Heroku', 'Stripe'],
+        bio:
+          'Data4Living simplifies your document management and helps prepare your documents to complete significant life events.',
+      },
+      {
+        name: 'Equati',
+        image: {
+          src: '../../../../assets/images/equati.png',
+          alt: 'Equati',
+        },
+        websiteUrl: 'app.equati.ai',
+        techStack: ['Vue', 'Django', 'PostgreSQL', 'Heroku'],
+        bio:
+          'Equati is an innovative wealth management platform, enabling Family Offices to align their values.',
+      },
+      {
+        name: 'Project Basta',
+        image: {
+          src: '../../../../assets/images/projectBasta.png',
+          alt: 'Project Basta',
+        },
+        websiteUrl: 'seekr.projectbasta.com',
+        techStack: [
+          'React',
+          'Django',
+          'GraphQL',
+          'PostgreSQL',
+          'Heroku',
+          'Airtable',
+          'MongoDB',
+          'GSheets',
+        ],
+        bio:
+          'Basta is bridging the employment gap and building careers for first generation students through award winning technology and robust employer partnerships.',
+      },
+      {
+        name: 'El Camino Travel',
+        image: {
+          src: '../../../../assets/images/elCamino.png',
+          alt: 'El Camino',
+        },
+        websiteUrl: 'www.elcamino.travel',
+        techStack: [
+          'Vue',
+          'Django',
+          'PostgreSQL',
+          'Heroku',
+          'Stripe',
+          'Checkfront',
+        ],
+        bio: `Get exclusive access to high-quality immersive recommendations and experiences from the world's top hospitality experts.`,
+      },
+      {
+        name: 'Keep Company',
+        image: {
+          src: '../../../../assets/images/keepCompany.png',
+          alt: 'Keep Company',
+        },
+        websiteUrl: 'www.keep-company.com',
+        techStack: ['Vue', 'Django', 'PostgreSQL', 'Heroku'],
+        bio: 'Keep Company is a coaching community for parents & caregivers.',
+      },
+      {
+        name: 'SchoolHouse Connection',
+        image: {
+          src: '../../../../assets/images/schoolhouseConnection.png',
+          alt: 'SchoolHouse',
+        },
+        websiteUrl: 'schoolhouseconnection.org/',
+        techStack: ['Vue', 'Django', 'PostgreSQL', 'Heroku'],
+        bio: `The nation's leading expert on early care and education of youth experiencing homelessness.`,
+      },
+      {
+        name: 'Network For Good',
+        image: {
+          src: '../../../../assets/images/networkForGood.png',
+          alt: 'NFG',
+        },
+        websiteUrl: 'www.nfggive.org',
+        techStack: ['React', 'Angular', 'Node', 'MongoDB', 'Jenkins'],
+        bio:
+          'Network for Good is a 501(c)(3) charity that operates a technology-enabled donor advised fund which enables donors to raise and direct funds to their favorite charities.',
+      },
+      {
+        name: 'ReWyre',
+        image: {
+          src: '../../../../assets/images/rewyre.png',
+          alt: 'ReWyre',
+        },
+        websiteUrl: 'www.rewyre.com',
+        techStack: [
+          'Vue',
+          'Django',
+          'PostgreSQL',
+          'Heroku',
+          'Autodesk',
+          'Stripe',
+        ],
+        bio:
+          'ReWyre is a commercial RFP and marketplace platform designed to drive new property solutions seamlessly through your portfolio.',
+      },
+      {
+        name: 'Grant Circles',
+        image: {
+          src: '../../../../assets/images/canary.png',
+          alt: 'Canary',
+        },
+        websiteUrl: 'thegivingtree.grantcircles.org',
+        techStack: [
+          'Vue',
+          'Django',
+          'PostgreSQL',
+          'Heroku',
+          'Stripe',
+          'Twilio',
+        ],
+        bio:
+          'The Grant Circle is a pool of funds for and funded by The Giving Tree community to support each other during financial emergencies.',
+      },
+      {
+        name: 'Movie Recommender',
+        image: {
+          src: '../../../../assets/images/movie-recommender.png',
+          alt: 'movie recommender',
+        },
+        websiteUrl: 'movie-recommender.mayakeeley.com',
+        githubUrl: 'github.com/mayakeeley/movie-recommender',
+        techStack: ['Angular 11', 'SCSS', 'NGRX'],
+        bio:
+          "Program which suggests movies to watch based on user's favourite films",
+      },
+    ],
+  },
+  {
+    title: 'Work History',
     id: 'work',
     isProject: true,
     info: [
@@ -31,7 +176,7 @@ export const data: SectionModel[] = [
         name: 'Bot-Hive',
         startDate: 'March 2020',
         endDate: 'April 2021',
-        jobTitle: 'Mid-level Developer',
+        jobTitle: 'Software Developer',
         websiteUrl: 'bot-hive.com',
         techStack: [
           'Angular 9 & 11',
@@ -67,128 +212,6 @@ export const data: SectionModel[] = [
         websiteUrl: 'nology.io',
         bio:
           'Front-end tech training course which takes exceptional people from a wide range of backgrounds, with no tech experience, and teaches them how to code in just 12 weeks.',
-      },
-    ],
-  },
-  {
-    title: 'Projects',
-    id: 'projects',
-    isProject: true,
-    info: [
-      {
-        name: 'Project Basta',
-        image: {
-          src: '../../../../assets/images/projectBasta.png',
-          alt: 'Project Basta',
-        },
-        websiteUrl: 'https://www.projectbasta.com',
-        techStack: [
-          'React',
-          'Django',
-          'PostgreSQL',
-          'Heroku',
-          'Airtable',
-          'MongoDB',
-          'GSheets',
-        ],
-        bio:
-          'Basta is bridging the employment gap and building careers for first generation students through award winning technology and robust employer partnerships.',
-      },
-      {
-        name: 'El Camino Travel',
-        image: {
-          src: '../../../../assets/images/elCamino.png',
-          alt: 'El Camino',
-        },
-        websiteUrl: 'https://www.elcamino.travel',
-        techStack: [
-          'Vue',
-          'Django',
-          'PostgreSQL',
-          'Heroku',
-          'Stripe',
-          'Checkfront',
-        ],
-        bio: `Get exclusive access to high-quality immersive recommendations and experiences from the world's top hospitality experts.`,
-      },
-      {
-        name: 'Keep Company',
-        image: {
-          src: '../../../../assets/images/keepCompany.png',
-          alt: 'Keep Company',
-        },
-        websiteUrl: 'https://www.keep-company.com',
-        techStack: ['Vue', 'Django', 'PostgreSQL', 'Heroku'],
-        bio: 'Keep Company is a coaching community for parents & caregivers.',
-      },
-      {
-        name: 'SchoolHouse Connection',
-        image: {
-          src: '../../../../assets/images/schoolhouseConnection.png',
-          alt: 'SchoolHouse',
-        },
-        websiteUrl: 'https://schoolhouseconnection.org/',
-        techStack: ['Vue', 'Django', 'PostgreSQL', 'Heroku'],
-        bio: `The nation's leading expert on early care and education of youth experiencing homelessness.`,
-      },
-      {
-        name: 'Network For Good',
-        image: {
-          src: '../../../../assets/images/nfg.png',
-          alt: 'NFG',
-        },
-        websiteUrl: 'https://www.nfggive.org',
-        techStack: ['React', 'Angular', 'Node', 'MongoDB', 'Jenkins'],
-        bio:
-          'Network for Good is a 501(c)(3) charity that operates a technology-enabled donor advised fund which enables donors to raise and direct funds to their favorite charities.',
-      },
-      {
-        name: 'ReWyre',
-        image: {
-          src: '../../../../assets/images/rewyre.png',
-          alt: 'ReWyre',
-        },
-        websiteUrl: 'https://www.rewyre.com',
-        techStack: [
-          'Vue',
-          'Django',
-          'PostgreSQL',
-          'Heroku',
-          'Autodesk',
-          'Stripe',
-        ],
-        bio:
-          'ReWyre is a commercial RFP and marketplace platform designed to drive new property solutions seamlessly through your portfolio.',
-      },
-      {
-        name: 'Grant Circles',
-        image: {
-          src: '../../../../assets/images/canary.png',
-          alt: 'Canary',
-        },
-        websiteUrl: 'https://thegivingtree.grantcircles.org',
-        techStack: [
-          'Vue',
-          'Django',
-          'PostgreSQL',
-          'Heroku',
-          'Stripe',
-          'Twilio',
-        ],
-        bio:
-          'The Grant Circle is a pool of funds for and funded by The Giving Tree community to support each other during financial emergencies.',
-      },
-      {
-        name: 'Movie Recommender',
-        image: {
-          src: '../../../../assets/images/movie-recommender.png',
-          alt: 'movie recommender',
-        },
-        websiteUrl: 'movie-recommender.mayakeeley.com',
-        githubUrl: 'github.com/mayakeeley/movie-recommender',
-        techStack: ['Angular 11', 'SCSS', 'NGRX'],
-        bio:
-          "Program which suggests movies to watch based on user's favourite films",
       },
     ],
   },

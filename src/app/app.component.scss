@@ -3,5 +3,6 @@
 .content {
   @include fluid-property("padding-left", 16px, 64px);
   @include fluid-property("padding-right", 16px, 64px);
-
+  max-width: 1024px;
+  margin: 0 auto;
 }

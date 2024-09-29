@@ -26,7 +26,7 @@
 
   &__bio {
     font-weight: 300;
-    @include fluid-property("font-size", 18px, 24px);
+    @include fluid-property("font-size", 16px, 20px);
     @include fluid-property("margin-bottom", 8px, 16px);
   }
 
@@ -37,13 +37,13 @@
     &__heading {
       font-weight: 400;
       padding-bottom: 0.5em;
-      @include fluid-property("font-size", 20px, 32px);
+      @include fluid-property("font-size", 12px, 16px);
 
     }
   }
 
   &__title {
-    @include fluid-property("font-size", 36px, 52px);
+    @include fluid-property("font-size", 28px, 36px);
     font-weight: 400;
     @include fluid-property("margin-bottom", 8px, 16px);
     display: flex;
