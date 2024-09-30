@@ -1,21 +1,21 @@
 @import "src/styles/styles";
 
 .intro {
-  @include fluid-property("padding-top", 56px, 128px);
-  @include fluid-property("padding-bottom", 56px, 128px);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem 0;
 
   &__img {
-    @include fluid-property("height", 100px, 150px);
+    height: 8rem;
     @include fluid-property("margin-right", 16px, 40px);
     border-radius: 50%;
   }
   &__info {
     padding: 0.625em;
     &__title {
-      @include fluid-property("font-size", 24px, 40px);
+      font-size: 1.5rem;
+      font-weight: 700;
     }
     &__text {
       font-weight: 300;
@@ -24,11 +24,12 @@
     }
 
     &__subtitle {
-      @include fluid-property("font-size", 16px, 24px);
+      font-size: 1.25rem;
     }
 
     &__content {
-      @include fluid-property("font-size", 12px, 16px);
+      font-size: 0.875rem;
+      font-style: italic;
     }
   }
 
@@ -36,7 +37,7 @@
     margin-top: 1em;
 
     &__link {
-      @include fluid-property("font-size", 20px, 24px);
+      @include fluid-property("font-size", 20px, 20px);
 
       padding-right: 1em;
     }

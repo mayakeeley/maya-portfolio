@@ -10,12 +10,12 @@ import { ViewportScroller } from '@angular/common';
 export class HeaderComponent implements OnInit {
   public links: NavLinksModel[] = [
     {
-      link: 'work',
-      title: 'WORK',
-    },
-    {
       link: 'projects',
       title: 'PROJECTS',
+    },
+    {
+      link: 'work',
+      title: 'WORK',
     },
     {
       link: 'education',

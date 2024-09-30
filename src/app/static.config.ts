@@ -147,7 +147,7 @@ export const data: SectionModel[] = [
     ],
   },
   {
-    title: 'Work History',
+    title: 'Work',
     id: 'work',
     isProject: true,
     info: [

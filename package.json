@@ -8,7 +8,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "heroku-postbuild": "export NODE_OPTIONS=--openssl-legacy-provider; ng build"
+    "heroku-postbuild": "npm run build"
+  },
+  "engines": {
+    "node": "14.*.*",
+    "npm": "9.*.*"
   },
   "private": true,
   "dependencies": {

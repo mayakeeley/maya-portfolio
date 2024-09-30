@@ -3,8 +3,8 @@
 .project {
   display: flex;
   font-weight: 300;
-  margin: 0 0 2em 0;
-  padding: 2em 0;
+  margin: 0 0 1em 0;
+  padding: 1em 0;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -20,32 +20,34 @@
   }
 
   &__italics {
-    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
     margin-bottom: 1rem;
   }
 
   &__bio {
     font-weight: 300;
-    @include fluid-property("font-size", 16px, 20px);
-    @include fluid-property("margin-bottom", 8px, 16px);
+    @include fluid-property("font-size", 16px, 16px);
+    font-style: italic;
+    @include fluid-property("margin-bottom", 8px, 8px);
   }
 
   &__tech {
     padding: 1em 0;
-    @include fluid-property("font-size", 16px, 20px);
+    @include fluid-property("font-size", 16px, 16px);
 
     &__heading {
       font-weight: 400;
       padding-bottom: 0.5em;
-      @include fluid-property("font-size", 12px, 16px);
+      @include fluid-property("font-size", 16px, 16px);
 
     }
   }
 
   &__title {
-    @include fluid-property("font-size", 28px, 36px);
+    @include fluid-property("font-size", 24px, 24px);
     font-weight: 400;
-    @include fluid-property("margin-bottom", 8px, 16px);
+    @include fluid-property("margin-bottom", 8px, 8px);
     display: flex;
     align-items: center;
   }

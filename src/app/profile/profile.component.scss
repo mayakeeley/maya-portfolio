@@ -3,8 +3,8 @@
 .profile {
   display: flex;
   font-weight: 300;
-  margin: 0 0 2em 0;
-  padding: 2em 0;
+  margin: 0 0 1em 0;
+  padding: 1em 0;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -16,9 +16,9 @@
   }
 
   &__title {
-    @include fluid-property("font-size", 36px, 52px);
+    @include fluid-property("font-size", 24px, 24px);
     font-weight: 400;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   &__image {
@@ -46,12 +46,13 @@
 
   &__subtitle {
     font-weight: 300;
-    @include fluid-property("font-size", 18px, 24px);
+    @include fluid-property("font-size", 16px, 16px);
     margin-bottom: 1em;
   }
 
   &__activities {
     font-weight: 300;
-    @include fluid-property("font-size", 16px, 20px);
+    @include fluid-property("font-size", 16px, 16px);
+    font-style: italic;
   }
 }

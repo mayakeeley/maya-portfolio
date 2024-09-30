@@ -9,7 +9,6 @@
 }
 
 .header {
-  height: 5.5em;
   background-color: $dark;
   box-shadow: 0.1em 0.25em 0.25em rgba($dark, 0.15);
   width: 100%;
@@ -24,16 +23,16 @@
     justify-content: space-between;
     background-color: inherit;
     align-items: center;
-    padding: 1.625em 0;
+    padding: 1.375rem 0;
     height: 100%;
   }
 
   &__title {
-    font-weight: 700;
+    font-weight: 400;
     background-color: $dark;
     color: white;
     margin: 0;
-    @include fluid-property("font-size", 16px, 24px);
+    font-size: 1rem;
 
     &__wrapper {
       text-decoration: none;
@@ -60,9 +59,8 @@
       color: $light;
       background-color: $dark;
       text-decoration: none;
-      font-size: 1.2em;
       @include fluid-property("margin-left", 8px, 32px);
-      @include fluid-property("font-size", 14px, 20px);
+      @include fluid-property("font-size", 14px, 14px);
 
 
       &:hover {
