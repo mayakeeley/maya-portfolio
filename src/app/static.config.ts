@@ -49,6 +49,17 @@ export const data: SectionModel[] = [
           'Basta is bridging the employment gap and building careers for first generation students through award winning technology and robust employer partnerships.',
       },
       {
+        name: 'GrainFertility',
+        image: {
+          src: '../../../../assets/images/grainfertility.png',
+          alt: 'GrainFertility',
+        },
+        websiteUrl: 'grainfertility.com',
+        techStack: ['Vue', 'Django', 'PostgreSQL', 'Heroku', 'Stripe'],
+        bio:
+          'Easily store, organize, and share all of your fertility information, helping you make informed decisions and leading to improved outcomes.',
+      },
+      {
         name: 'El Camino Travel',
         image: {
           src: '../../../../assets/images/elCamino.png',
